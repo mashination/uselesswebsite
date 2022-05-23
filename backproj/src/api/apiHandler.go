@@ -133,7 +133,7 @@ func createNewTopic(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
     reqBody, _ := ioutil.ReadAll(r.Body)
     //fmt.Print(string(reqBody))
-	fmt.Print("caca")
+
 	var topic Topic
     json.Unmarshal(reqBody, &topic)
 	fmt.Print(topic)
@@ -152,7 +152,7 @@ func createNewReply(w http.ResponseWriter, r *http.Request) {
 	enableCors(&w)
     reqBody, _ := ioutil.ReadAll(r.Body)
     //fmt.Print(string(reqBody))
-	fmt.Print("boudin")
+
 	var reply Reply
     json.Unmarshal(reqBody, &reply)
 	fmt.Print(reply)
